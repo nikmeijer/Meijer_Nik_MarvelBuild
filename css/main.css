@@ -43,7 +43,7 @@ header {
 
 .characters li { 
     display: inline-block; 
-    height: 220px;
+    height: 200px;
     margin: 10px 8px;
 
     background-color: black;
@@ -54,7 +54,10 @@ header {
 
 .characters li h5 {
     padding: 14px 8px;
+    color: white;
 }
+
+.characters li a {text-decoration: none;}
 
 .characters li img {width: 150px; cursor: pointer; }
 
@@ -106,3 +109,59 @@ footer {
     height: 80px;
     background-color: rgb(40, 37, 37);
 }
+
+/*lightbox styles*/
+.lightbox {
+    display: none;
+    width: 100vw; /*viewport width = width of browser window*/
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-repeat: no-repeat;
+
+    background-position: 40px bottom;
+    background-size: 55vh;
+}
+
+.lb_close {
+    color: white;
+    font-size: 2em;
+
+    text-decoration: none;
+
+    position: relative;
+    top: 20px;
+    left: 95%;
+    font-weight: bolder;
+}
+
+.lb_close:hover {opacity: 0.5;}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+    line-height: 1.6;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+#lightbox {
+    background-image: url('../img/Cap_LB_Bg.png');
+}
+
+#lightbox2 {
+    background-image: url('../img/Thor_LB_Bg.png');
+}
+
+/*toggle lightbox on*/
+.lightbox:target {display: block;}
