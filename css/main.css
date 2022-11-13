@@ -15,7 +15,7 @@ body {
   color: rgb(20, 0, 0);
   text-align: center;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.75);
   background-image: url('../img/characterBuildImages/noise.jpg');
   background-repeat: repeat;
   background-blend-mode: overlay;
@@ -23,10 +23,13 @@ body {
 
 /*style the header*/
 header {
-    background-color: white;
     position: sticky;
     top: 0;
     text-align: center;
+
+    background-color: rgb(255, 255, 255, 0.9);
+    background-image: url('../img/characterBuildImages/noise.jpg');
+    background-blend-mode: overlay;
 }
 
 #main-logo {width: 350px; padding: 5px 0;}
@@ -35,6 +38,7 @@ header {
 #character-nav { 
     text-align: center;
     padding-top: 5px;
+    padding-bottom: 5px;
     /*add bg image to nav*/
     background-image: url("../img/characterBuildImages/omori-background.png");
     background-blend-mode: overlay;
@@ -267,18 +271,21 @@ footer {
     background-image: url('../img/characterBuildImages/kel-lb.png');
     background-position: 15%;
     background-color: rgba(255, 119, 0, 0.85);
+    color: white;
 }
 
 #lightbox3 {
     background-image: url('../img/characterBuildImages/aubrey-lb.png');
     background-position: 15%;
     background-color: rgba(255, 105, 245, 0.85);
+    color: white;
 }
 
 #lightbox4 {
     background-image: url('../img/characterBuildImages/hero-lb.png');
     background-position: 15%;
     background-color: rgba(134, 101, 78, 0.85);
+    color: white;
 }
 
 #lightbox5 {

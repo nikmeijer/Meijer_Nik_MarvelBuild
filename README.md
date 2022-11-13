@@ -1,6 +1,12 @@
 # MarvelBuild
 
-all about marvel heroes
+All about characters from video game 'Omori'
+These include: Omori/Sunny, Kel, Aubrey, Hero, Basil, and Mari
+
+# Description
+
+Each character has their own feature lightbox with unique images and and styling.
+Build based on in-class Marvel Character build, and modified to fit my own topic.
 
 ## Contributing
 
@@ -13,7 +19,7 @@ all about marvel heroes
 ## Credits
 
 All images copyright by Marvel
-Nikolai Meijer
+Website by Nikolai Meijer
 
 ## License
 
