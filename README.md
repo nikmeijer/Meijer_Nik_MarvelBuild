@@ -1,4 +1,4 @@
-# MarvelBuild
+# Omori Build
 
 All about characters from video game 'Omori'
 These include: Omori/Sunny, Kel, Aubrey, Hero, Basil, and Mari
