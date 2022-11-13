@@ -10,32 +10,37 @@
 html, body { height: 100% }
 
 body { 
-  font-family: sans-serif;
-  background-color: black;
-  color: white;
-  background-image: url('../img/denim.png');
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: rgb(20, 0, 0);
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.75);
+  background-image: url('../img/characterBuildImages/noise.jpg');
+  background-repeat: repeat;
+  background-blend-mode: overlay;
 }
 
 /*style the header*/
 header {
-    background-color: red;
     position: sticky;
     top: 0;
     text-align: center;
+
+    background-color: rgb(255, 255, 255, 0.9);
+    background-image: url('../img/characterBuildImages/noise.jpg');
+    background-blend-mode: overlay;
 }
 
-#main-logo {width: 300px; padding: 10px 0;}
+#main-logo {width: 350px; padding: 5px 0;}
 
 /*main section styles*/
 #character-nav { 
-    text-align: center; 
-    background-color:rgb(150, 122, 122); 
-
-    /*ass a bg image to nav*/
-    background-image: url("../img/characters_art_mas_mob.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /*add bg image to nav*/
+    background-image: url("../img/characterBuildImages/omori-background.png");
     background-blend-mode: overlay;
 }
 
@@ -46,37 +51,115 @@ header {
     height: 200px;
     margin: 10px 8px;
 
-    background-color: black;
+    background-color:rgb(52, 0, 116); 
     text-align: left;
     overflow: hidden;
 
 }
 
 .characters li h5 {
-    padding: 14px 8px;
+    padding: 12px 8px;
     color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: center;
 }
 
 .characters li a {text-decoration: none;}
 
 .characters li img {width: 150px; cursor: pointer; }
 
-.sprite {
+.omori {
     width: 150px;
     height: 150px;
 
-    background-image: url('../img/marvelSprites1.jpg')
+    background-image: url('../img/characterBuildImages/omori1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.sprite:hover {background-position-y: -150px !important;}
+.omori:hover {
+    background-image: url('../img/characterBuildImages/omori2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
-#carol {background-position: -150px 0;}
-#clint {background-position: -300px 0;}
-#hulk {background-position: -450px 0;}
-#thor {background-position: -600px 0;}
-#widow {background-position: -750px 0;}
+.kel {
+    width: 150px;
+    height: 150px;
 
-.red-bumper {height: 6px; background-color: red;}
+    background-image: url('../img/characterBuildImages/kel1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.kel:hover {
+    background-image: url('../img/characterBuildImages/kel2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.aubrey {
+    width: 150px;
+    height: 150px;
+
+    background-image: url('../img/characterBuildImages/aubrey1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.aubrey:hover {
+    background-image: url('../img/characterBuildImages/aubrey2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero {
+    width: 150px;
+    height: 150px;
+
+    background-image: url('../img/characterBuildImages/hero1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero:hover {
+    background-image: url('../img/characterBuildImages/hero2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.basil {
+    width: 150px;
+    height: 150px;
+
+    background-image: url('../img/characterBuildImages/basil1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.basil:hover {
+    background-image: url('../img/characterBuildImages/basil2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mari {
+    width: 150px;
+    height: 150px;
+
+    background-image: url('../img/characterBuildImages/mari1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mari:hover {
+    background-image: url('../img/characterBuildImages/mari2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bumper {height: 6px; background-color: rgb(207, 172, 255);}
 
 article {padding: 20px;}
 
@@ -106,8 +189,12 @@ footer {
     position: sticky;
     top:100%;
 
-    height: 80px;
+    height: 60px;
     background-color: rgb(40, 37, 37);
+}
+
+#stickyfoot {
+    font-size: smaller;
 }
 
 /*lightbox styles*/
@@ -122,9 +209,8 @@ footer {
 
     background-color: rgba(0, 0, 0, 0.85);
     background-repeat: no-repeat;
-
     background-position: 40px bottom;
-    background-size: 55vh;
+    background-size: contain;
 }
 
 .lb_close {
@@ -133,7 +219,19 @@ footer {
 
     text-decoration: none;
 
-    position: relative;
+    position:fixed;
+    top: 20px;
+    left: 95%;
+    font-weight: bolder;
+}
+
+.lb_close_blk {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+
+    text-decoration: none;
+
+    position:fixed;
     top: 20px;
     left: 95%;
     font-weight: bolder;
@@ -147,20 +245,60 @@ footer {
     padding-top: 50px;
 }
 
-.lb_text, .lb_heading { text-align: left; }
+.lb_heading {
+    text-align: left;
+    font-family: 'Garamond', serif;
+    font-size: xxx-large;
+}
 
 .lb_text {
-    line-height: 1.6;
+    text-align: left;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    line-height: 1.8;
     margin-left: 0;
     padding-top: 2em;
 }
 
 #lightbox {
-    background-image: url('../img/Cap_LB_Bg.png');
+    background-image: url('../img/characterBuildImages/sunny-lb.png');
+    background-position: 15%;
+    background-color: rgb(255, 255, 255, 0.85);
+    color: black;
 }
 
 #lightbox2 {
-    background-image: url('../img/Thor_LB_Bg.png');
+    background-image: url('../img/characterBuildImages/kel-lb.png');
+    background-position: 15%;
+    background-color: rgba(255, 119, 0, 0.85);
+    color: white;
+}
+
+#lightbox3 {
+    background-image: url('../img/characterBuildImages/aubrey-lb.png');
+    background-position: 15%;
+    background-color: rgba(255, 105, 245, 0.85);
+    color: white;
+}
+
+#lightbox4 {
+    background-image: url('../img/characterBuildImages/hero-lb.png');
+    background-position: 15%;
+    background-color: rgba(134, 101, 78, 0.85);
+    color: white;
+}
+
+#lightbox5 {
+    background-image: url('../img/characterBuildImages/basil-lb.png');
+    background-position: 15%;
+    background-color: rgba(133, 199, 138, 0.85);
+}
+
+#lightbox6 {
+    background-image: url('../img/characterBuildImages/mari-lb.png');
+    background-position: 15%;
+    background-color: black;
+    color: rgb(178, 0, 0);
 }
 
 /*toggle lightbox on*/
